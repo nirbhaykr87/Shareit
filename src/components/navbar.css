@@ -1,0 +1,149 @@
+
+
+.navbar li a {
+    color: #808DAD !important;
+  }
+  .navbar li a:hover {
+    color:#01d293 !important;
+  }
+  .navbar-brand {
+    color: white !important;
+  }
+  
+  .offcanvas {
+    /* background-color: #0e1630 !important; */
+  /* background-color: rgb(18 17 33); */
+
+  
+  }
+  
+  
+  /* Add these styles to your navbar.css or appropriate stylesheet */
+  
+  .navbar {
+    z-index: 1000; /* Adjust this value */
+  }
+  
+  .offcanvas {
+    z-index: 999; /* Adjust this value to be lower than the navbar's z-index */
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .customCloseButton {
+    color: red;
+  
+  }
+  
+  .offcanvas-header .btn-close {
+    /* color: white !important;  */
+    background-color: rgb(255, 255, 255) !important;
+  }
+  
+  .offcanvas-body li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: bottom !important;
+    line-height: 40px;
+    font-weight: bold;
+   
+  }
+  
+  .navbar-nav li {
+    margin-right: 12px;
+    /* Adjust the value as needed */
+  }
+  
+  .svghide {
+    margin-left: 12px !important;
+    
+  }
+  
+  
+  .svganchor a {
+    color: white;
+  }
+  
+  .svganchor a svg:hover {
+    color: #01d293;
+    font-weight: bolder;
+  
+    transform: scale(1.4);
+    transition: .3s;
+  }
+  .stickytop{
+    position: sticky;
+    top: 0px;
+  
+    /* background-color: #0e1630 !important;
+     */
+  /* background-color: rgb(18 17 33); */
+
+  
+    
+  
+    
+  }
+  
+  /* media query for mobile device */
+  @media only screen and (max-width: 576px) {
+    .offcanvas-body {
+      margin-top: 114px;
+    }
+  
+    .offcanvas {
+      width: 70% !important;
+  
+    }
+  
+  }
+  
+  
+  
+  /* media query fro medium devices */
+  @media only screen and (min-width: 768px) {
+    .navbar-brand {
+      font-size: 1.5rem !important;
+  
+    }
+  
+  
+  }
+  
+  
+  /* media query for large devices */
+  @media only screen and (min-width: 992px) {
+    .svg_items_on_nav {
+      display: none;
+  
+  
+    }
+  
+    .svg_items_on_nav1 {
+      display: none;
+    }
+  
+    .bi-person-circle {
+      display: none !important;
+    }
+  
+  
+  
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .svghide {
+      display: none;
+    }
+  
+    .svg_insta_hide {
+      display: none;
+    }
+  }

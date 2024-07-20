@@ -1,0 +1,20 @@
+/* Animation.css */
+.animation-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Optional: background color to avoid white edges */
+    z-index: 9999; /* Ensure it is on top of other elements */
+  }
+  
+  .fullscreen-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

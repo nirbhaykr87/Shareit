@@ -1,0 +1,69 @@
+/* *{
+  background-color: rgb(18 17 33);
+  font-family: "Quicksand", sans-serif;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+
+*{
+  font-family: 'Quicksand', sans-serif !important;
+  background-color: rgb(18 17 33) !important;
+
+  
+  color: white ;
+}
+.side a.active{
+  color: #01d293 !important;
+  border-bottom: 2px solid #01d293;
+  line-height: 1.5;
+
+}
+
+@keyframes network-logo {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(-20px);}
+  100% {transform: translateY(0);}
+}
+
+#network-image {
+ animation-name: network-logo;
+ animation-duration: 5s; /* Adjust the duration as needed for a slower effect */
+ animation-timing-function: ease-in-out;
+ animation-iteration-count: infinite;
+}
+.bt{
+  border: none;
+  color: #0D1322;
+  padding: 15px 32px;
+  background-color: #3BE8b0 !important;
+
+  border-radius:10px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+.bt:hover{
+ 
+  background-color: #01d293 !important;
+
+
+
+}
+@media only screen and (max-width: 600px) {
+  .header-align{
+    text-align: center;
+  }
+  .bt{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
