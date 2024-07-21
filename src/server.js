@@ -5,6 +5,12 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors());
+app.use(cors({
+  origin: 'https://your-frontend-url.onrender.com' // Replace with your frontend URL on Render
+}));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 
 
 
