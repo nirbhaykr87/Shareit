@@ -1,17 +1,13 @@
-@media only  screen and (max-width:600px) {
-    
-}
-/* home.css */
+@media only screen and (max-width:600px) {}
+
 .profile-photo {
-    height: 70px;
-    width: 70px;
-  }
-  
-  .img-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25vh; /* Or any height you prefer */
-  }
-  
-  
+  height: 70px;
+  width: 70px;
+}
+
+.img-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+}

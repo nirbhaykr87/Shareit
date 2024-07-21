@@ -38,6 +38,7 @@ export default function Room() {
     <div className="container">
       <div className="header">
         <h2>Hi, <span className='nickname'>{nickname}!</span></h2>
+        <p style={{ color: '#808DAD' }}>Join or create a room to share files</p>
       </div>
       <div className="content mt-5">
         {recentRoom && (
@@ -45,7 +46,7 @@ export default function Room() {
             <h3>Recent Rooms</h3>
             <div className="room-card">
               <p>{recentRoom}</p>
-              <button onClick={() => navigate(`/room/${recentRoom}`)}>Rejoin Room</button>
+              <button className='recentbtn' onClick={() => navigate(`/room/${recentRoom}`)}>Rejoin Room</button>
             </div>
           </div>
         )}

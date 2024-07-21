@@ -5,6 +5,12 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors());
+app.use(cors({
+  origin: 'https://your-frontend-url.onrender.com' // Replace with your frontend URL on Render
+}));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 
 const server = http.createServer(app);
 const io = socketIo(server, {
@@ -42,15 +48,17 @@ io.on('connection', (socket) => {
     const { roomId, file } = data;
     if (rooms[roomId]) {
       rooms[roomId].files.push(file);
-      io.to(roomId).emit('file_shared', file);
+      io.to(roomId).emit('file_shared', rooms[roomId].files);
+      console.log(`File shared in room ${roomId}:`, file);
     }
   });
 
   socket.on('disconnect', () => {
     const roomId = socket.roomId;
-    if (rooms[roomId]) {
+    if (roomId && rooms[roomId]) {
       rooms[roomId].members = rooms[roomId].members.filter(nickname => nickname !== socket.nickname);
       io.to(roomId).emit('room_members', rooms[roomId].members);
+      console.log(`User ${socket.nickname} left room: ${roomId}`);
     }
     console.log('Client disconnected');
   });
