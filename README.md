@@ -29,11 +29,53 @@ ShareIt is a real-time file sharing application built using React, Node.js, and 
 ![Room Page](website_preview/img2.png)
 *Room Page*
 
+![Sharing Room Page](website_preview/img4.png)
+*Sharing Room Page*
+
+![Sharing Room Page](website_preview/img7.png)
+*Sharing Room Page*
+
+
+
+
+## Installation
+
+1. **Clone the repository:**
+    ```bash
+     git clone https://github.com/nirbhaykr87/Shareit.git
+    ```
+
+2. **Install dependencies for both client and server:**
+    ```bash
+    npm install
+   
+    ```
+3. **Start the application:**
+4. 
+   ***Use concurrently to start both the frontend and backend servers***
+
+    ```bash
+   npm start
+    ```
+
+    The application will be available at http://localhost:3000.
+ 
+
+
+
+
+
+
+
+
+
 ## Future Improvements
 
 - **🔒 Enhanced Security**: Implement authentication and authorization to secure rooms and user data.
 - **🌟 File Previews**: Add support for file previews before downloading.
 - **📁 File Management**: Organize and manage shared files within the app.
+
+
 
 
 
