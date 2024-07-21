@@ -51,7 +51,7 @@ ShareIt is a real-time file sharing application built using React, Node.js, and 
    
     ```
 3. **Start the application:**
-4. 
+
    ***Use concurrently to start both the frontend and backend servers***
 
     ```bash
