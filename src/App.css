@@ -1,21 +1,16 @@
-/* *{
-  background-color: rgb(18 17 33);
-  font-family: "Quicksand", sans-serif;
-} */
-
-
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 
 
-*{
+* {
   font-family: 'Quicksand', sans-serif !important;
   background-color: rgb(18 17 33) !important;
 
-  
-  color: white ;
+
+  color: white;
 }
-.side a.active{
+
+.side a.active {
   color: #01d293 !important;
   border-bottom: 2px solid #01d293;
   line-height: 1.5;
@@ -23,24 +18,33 @@
 }
 
 @keyframes network-logo {
-  0% {transform: translateY(0);}
-  50% {transform: translateY(-20px);}
-  100% {transform: translateY(0);}
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 #network-image {
- animation-name: network-logo;
- animation-duration: 5s; /* Adjust the duration as needed for a slower effect */
- animation-timing-function: ease-in-out;
- animation-iteration-count: infinite;
+  animation-name: network-logo;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
-.bt{
+
+.bt {
   border: none;
   color: #0D1322;
   padding: 15px 32px;
   background-color: #3BE8b0 !important;
 
-  border-radius:10px ;
+  border-radius: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -48,22 +52,60 @@
   margin: 4px 2px;
   font-weight: bold;
   cursor: pointer;
-  
+
 }
-.bt:hover{
- 
+
+.custombtn {
+  border: none;
+  background-color: #3BE8b0 !important;
+  color: #0D1322;
+  font-weight: bold;
+  padding: 10px 10px;
+  border-radius: 5px;
+
+}
+
+.files-list li a {
+  text-decoration: none;
+  color: #4CAF50;
+
+}
+
+.files-list li {
+
+  color: #808DAD;
+
+}
+
+.bt:hover {
+
   background-color: #01d293 !important;
 
 
 
 }
+
 @media only screen and (max-width: 600px) {
-  .header-align{
+  .header-align {
     text-align: center;
   }
-  .bt{
+
+  .bt {
     margin-left: auto;
     margin-right: auto;
   }
-}
 
+  .mockupimg {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mockupimg img {
+    height: 220px;
+    object-fit: contain;
+  }
+
+  .working_font_adjust {
+    text-align: center;
+  }
+}

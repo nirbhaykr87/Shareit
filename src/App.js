@@ -18,12 +18,12 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 7000); // Change the delay as needed
+    }, 3430);
 
     return () => clearTimeout(timer);
   }, []);
 
-  
+
 
 
   return (
@@ -32,19 +32,19 @@ function App() {
         <Animation />
       ) : (
         <BrowserRouter>
-        
+
           <Nav />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Working" element={<Working />} />
             <Route path="/room/" element={<Room />} />
             <Route path="/room/:roomId" element={<RoomJoin />} />
-            
+
           </Routes>
         </BrowserRouter>
-      
+
       )}
-      
+
 
     </>
   );
