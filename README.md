@@ -18,6 +18,15 @@ ShareIt is a real-time file sharing application built using React, Node.js, and 
 - **Join a Room**: Enter an existing room ID to join.
 - **Start Sharing**: Upload and share files with members in the room. Download shared files from others.
 
+
+## Video
+
+
+
+
+https://github.com/user-attachments/assets/b843d60c-213b-468d-abb7-e29497b29b77
+
+
 ## Screenshots
 
 ![Home Page](website_preview/img1.png)
